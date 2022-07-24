@@ -11,6 +11,7 @@ h1{
     position: absolute;
     top: 0px;
     left: 0px;
+    z-index: 2;
 }
 
 p::first-letter{
@@ -28,4 +29,6 @@ p::first-letter{
     width: 500px;
     position: absolute;
     bottom: 0px;
+    top: 0px;
+    z-index: 1;
 }
