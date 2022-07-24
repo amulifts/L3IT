@@ -1,0 +1,55 @@
+.table{
+    display: table;
+}
+
+.tr{
+    display: table-row;
+}
+
+.td{
+    display: table-cell;
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+div.blue1{
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    border-style: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+div.yellow1{
+    width: 100px;
+    height: 150px;
+    background-color: yellow;
+    border-style: none;
+    position: relative;
+    left: 100px;
+    top: -200px;
+}
+
+div.red1{
+    width: 100px;
+    height: 150px;
+    background-color: red;
+    border-style: none;
+    position: relative;
+    left: 200px;
+    top: -350px;
+}
+
+div.greeen1{
+    width: 200;
+    height: 50;
+    background-color: green;
+    border-style: none;
+    position: relative;
+    left: 100px;
+    top: -350;
+}
