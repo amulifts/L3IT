@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left left middle middle middle'
+    'left left left middle middle middle' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  padding: 95px;
+  height: 300px;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  padding: 95px;
+  height: 300px;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="header">
+    <h2>Header</h2>
+  </div>
+  
+  <div class="left" style="background-color:#aaa;">Column</div>
+  <div class="middle" style="background-color:#bbb;">Column</div>  
+
+  <div class="footer">
+  <p>Footer</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
