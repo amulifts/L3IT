@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Main Data Table */
+.mainTable{
+	text-align: center;
+	margin-top: 10px;
+}
+#table{
+	margin: 5px auto;
+}
+table tr:not(:first-child){
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+table tr:not(:first-child):hover{
+	background-color: #ddd;
+}
+
+table{
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+/*Data Update Button */
+.updateBtn{
+	text-align: center;
+}
+.updateBtn button{
+	background-color: red;
+	padding: 5px 10px;
+	border: 1px solid black;
+	color: white;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+.updateBtn button:hover{
+	background: lightgray;
+	color: black;
+	transition: .5s;
+}
+
+/*Data Update Table*/
+.editTable{
+	display: none;
+	padding-top: 20px;
+	width: 30%;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.editRowBtn{
+	background-color: #0DC143;
+	color: white;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.editRowBtn:hover{
+	background-color: lightgray;
+	color: black;
+	transition: .5s;
+}

@@ -1,9 +1,57 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Exercise-7</title>
-        <script src="script.js"></script>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <title>Exercise-7</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Data Table -->
+    <div class="mainTable">
+      <h1>Data</h1>
+      <table id="table" border="1">
+        <tr>
+          <th>Sno</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Country</th>
+          <th>Mobile number</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Aman</td>
+          <td>Khadka</td>
+          <td>Nepal</td>
+          <td>123456789</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Update Button -->
+    <div class="updateBtn">
+      <button onclick="editTableDisplay()">Update data</button>
+    </div>
+
+    <!-- Edit table -->
+    <div class="editTable">
+      <div class="left">First Name:</div>
+      <div class="right"><input type="text" name="fname" id="fname"></div>
+      <br>
+      <div class="left">Last Name:</div>
+      <div class="right"><input type="text" name="lname" id="lname"></div>
+      <br>
+      <div class="left">Country:</div>
+      <div class="right"><input type="text" name="country" id="country"></div>
+      <br>
+      <div class="left">Mobile number:</div>
+      <div class="right">
+        <input type="number" name="mNumber" id="mNumber">
+      </div>
+      <br>
+      <button onclick="editRow()" class="editRowBtn">Update</button><br>
+    </div>
+
+    <!-- link JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
